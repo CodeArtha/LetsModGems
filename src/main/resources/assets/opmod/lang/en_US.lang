@@ -1,0 +1,14 @@
+# Key localizations
+key.catergories.opmod=Mod of the OP
+
+# Item localizations
+item.opmod:steelIngot.name=Steel Ingot
+item.opmod:titaniumIngot.name=Titanium Ingot
+item.opmod:opIngot.name=OP Ingot
+item.opmod:adamantiumIngot.name=Adamantium Ingot
+item.opmod:advClock.name=Digital Clock
+item.opmod:creepySphere.name=Creepy Sphere
+item.opmod:creepyWand.name=Creepy Wand
+item.opmod:lightningWand.name=Lightning Wand
+item.opmod:opSword.name=OP Sword
+item.opmod:leatherStrip.name=Leather Strip
