@@ -1,6 +1,7 @@
 package com.codeartha.opmod;
 
 import com.codeartha.opmod.handler.ConfigurationHandler;
+import com.codeartha.opmod.init.ModBlocks;
 import com.codeartha.opmod.init.ModItems;
 import com.codeartha.opmod.proxy.IProxy;
 import com.codeartha.opmod.reference.Reference;
@@ -26,9 +27,11 @@ public class OpMod
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register( new ConfigurationHandler() );
-        LogHelper.info("Pre Initialisation Complete!");
 
         ModItems.init();
+        ModBlocks.init();
+
+        LogHelper.info( "Pre Initialisation Complete!" );
     }
 
     @Mod.EventHandler

@@ -1,5 +1,7 @@
 package com.codeartha.opmod.item;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.ForgeModContainer;
 
@@ -11,10 +13,7 @@ public class ItemAdvClock extends ItemOP
         this.setUnlocalizedName( "advClock" );
     }
 
-    @Override
-    public boolean hasEffect(ItemStack par1ItemStack){
-        return false;
-    }
+
 
     public String humanReadableTime(Long curTime)
     {

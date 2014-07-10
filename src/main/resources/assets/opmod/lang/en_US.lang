@@ -12,3 +12,6 @@ item.opmod:creepyWand.name=Creepy Wand
 item.opmod:lightningWand.name=Lightning Wand
 item.opmod:opSword.name=OP Sword
 item.opmod:leatherStrip.name=Leather Strip
+
+# Block localizations
+tile.opmod:adamantiumBlock.name=Adamantium Block
