@@ -7,5 +7,6 @@ public class ItemSteelIngot
     {
         super();
         this.setUnlocalizedName( "steelIngot" );
+        this.maxStackSize = 64;
     }
 }

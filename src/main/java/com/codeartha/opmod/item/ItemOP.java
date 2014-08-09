@@ -1,6 +1,6 @@
 package com.codeartha.opmod.item;
 
-import com.codeartha.opmod.creativetab.CreativeTab;
+import com.codeartha.opmod.creativetab.CreativeTabOP;
 import com.codeartha.opmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +14,7 @@ public class ItemOP extends Item
     {
         super();
         this.maxStackSize = 1;
-        this.setCreativeTab( CreativeTab.OpMod_TAB );
+        this.setCreativeTab( CreativeTabOP.OpMod_TAB );
         this.setNoRepair();
     }
 

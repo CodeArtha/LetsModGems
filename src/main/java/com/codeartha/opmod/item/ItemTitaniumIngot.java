@@ -6,5 +6,6 @@ public class ItemTitaniumIngot extends ItemOP
     {
         super();
         this.setUnlocalizedName( "titaniumIngot" );
+        this.maxStackSize = 64;
     }
 }

@@ -14,7 +14,7 @@ public class BlockAdamantium extends BlockOP
     {
         super();
         this.setBlockName("adamantiumBlock");
-        this.setHardness( 20.0f ); // Mining speed, ae: Osidian = 50.0f ; Iron Block = 5.0f
+        this.setHardness( 20.0f ); // Mining speed, ae: Obsidian = 50.0f ; Iron Block = 5.0f
         this.setResistance( 2500.0f ); // Blast resistance, ae: Obsidian : 2000.0f
         this.setStepSound( soundTypeMetal );
         this.mapColor = Color;

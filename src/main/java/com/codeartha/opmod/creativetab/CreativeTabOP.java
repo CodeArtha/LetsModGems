@@ -8,21 +8,14 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.util.StatCollector;
 
-public class CreativeTab
+public class CreativeTabOP
 {
-    public static final CreativeTabs OpMod_TAB = new CreativeTabs( Reference.MOD_ID)
+    public static final CreativeTabs OpMod_TAB = new CreativeTabs( Reference.MOD_ID.toLowerCase())
     {
         @Override
         public Item getTabIconItem()
         {
             return ModItems.lightningWand;
-        }
-
-        @Override
-        @SideOnly( Side.CLIENT )
-        public String getTranslatedTabLabel()
-        {
-            return StatCollector.translateToLocal( "key.catergories.opmod" );
         }
     };
 }

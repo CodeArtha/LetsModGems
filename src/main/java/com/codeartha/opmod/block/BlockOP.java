@@ -1,6 +1,6 @@
 package com.codeartha.opmod.block;
 
-import com.codeartha.opmod.creativetab.CreativeTab;
+import com.codeartha.opmod.creativetab.CreativeTabOP;
 import com.codeartha.opmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,12 +13,12 @@ public class BlockOP extends Block
     public BlockOP(Material material)
     {
         super(material);
-        this.setCreativeTab( CreativeTab.OpMod_TAB );
+        this.setCreativeTab( CreativeTabOP.OpMod_TAB );
     }
 
     public BlockOP()
     {
-        this(Material.rock);
+        this(Material.iron);
     }
 
     @Override

@@ -7,5 +7,6 @@ public class ItemLeatherStrip
     {
         super();
         this.setUnlocalizedName( "leatherStrip" );
+        this.maxStackSize = 64;
     }
 }
