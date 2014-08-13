@@ -1,0 +1,21 @@
+[
+{
+  "modid": "OpMod",
+  "name": "Mod of the OP",
+  "description": "First little mod by CodeArtha.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "CodeArtha"
+  ],
+  "credits": "CodeArtha",
+  "logoFile": "assets/opmod/textures/logo/logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
