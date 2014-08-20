@@ -35,6 +35,8 @@ public class OpMod
         FMLCommonHandler.instance().bus().register( new ConfigurationHandler() );
         MinecraftForge.EVENT_BUS.register( new Event_LivingDrops() );
 
+        proxy.registerKeyBindings();
+
         ModItems.init();
         ModBlocks.init();
         ModOreRegistry.init();

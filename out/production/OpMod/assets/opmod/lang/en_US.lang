@@ -1,4 +1,9 @@
 # Key localizations
+keys.opmod.category=Mod of the OP
+keys.opmod.charge=Charge
+keys.opmod.release=Release
+
+# Creative tabs localizations
 itemGroup.opmod=Mod of the OP
 
 # Item localizations
@@ -19,10 +24,11 @@ item.opmod:enchantedDiamondStick.name=Enchanted Diamond Stick
 item.opmod:steelQuarrel.name=Steel Quarrel
 item.opmod:crossBow.name=Crossbow
 
-
 # Block localizations
 tile.opmod:adamantiumBlock.name=Adamantium Block
 tile.opmod:steelBlock.name=Steel Block
 tile.opmod:titaniumBlock.name=Titanium Block
 tile.opmod:titaniumOre.name=Titanium Ore
+
+# Misc.
 tile.advClock.time=Current time
