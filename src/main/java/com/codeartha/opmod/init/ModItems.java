@@ -10,6 +10,7 @@ import com.codeartha.opmod.item.ItemEnchantedDiamondStick;
 import com.codeartha.opmod.item.ItemLeatherStrip;
 import com.codeartha.opmod.item.ItemLightningSphere;
 import com.codeartha.opmod.item.ItemLightningWand;
+import com.codeartha.opmod.item.ItemLongDoor;
 import com.codeartha.opmod.item.ItemOP;
 import com.codeartha.opmod.item.ItemOPIngot;
 import com.codeartha.opmod.item.ItemOPSword;
@@ -19,6 +20,7 @@ import com.codeartha.opmod.item.ItemSteelQuarrel;
 import com.codeartha.opmod.item.ItemTitaniumIngot;
 import com.codeartha.opmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.material.Material;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems
@@ -55,6 +57,8 @@ public class ModItems
 
     public static final ItemOP enchantedDiamondStick = new ItemEnchantedDiamondStick();
 
+    public static final ItemOP longDoor = new ItemLongDoor( Material.wood );
+
     public static void init()
     {
         GameRegistry.registerItem( steelIngot, "steelIngot" );
@@ -73,6 +77,7 @@ public class ModItems
         GameRegistry.registerItem( portableBed, "portableBed" );
         GameRegistry.registerItem( enchantedDiamond, "enchantedDiamond" );
         GameRegistry.registerItem( enchantedDiamondStick, "enchantedDiamondStick" );
+        GameRegistry.registerItem( longDoor, "longDoor" );
     }
 }
 
