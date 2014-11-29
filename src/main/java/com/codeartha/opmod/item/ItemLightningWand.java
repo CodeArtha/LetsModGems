@@ -3,12 +3,10 @@ package com.codeartha.opmod.item;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class ItemLightningWand extends ItemOP
+public class ItemLightningWand
+    extends ItemOP
 {
     public ItemLightningWand()
     {
@@ -18,7 +16,7 @@ public class ItemLightningWand extends ItemOP
     }
 
     @Override
-    public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
+    public ItemStack onItemRightClick( ItemStack itemstack, World world, EntityPlayer entityplayer )
     {
         /*if (!entityplayer.capabilities.isCreativeMode)
         {
@@ -54,11 +52,11 @@ public class ItemLightningWand extends ItemOP
             }
         }*/
 
-        if (!entityplayer.capabilities.isCreativeMode)
+        if ( !entityplayer.capabilities.isCreativeMode )
         {
-            itemstack.damageItem(1, entityplayer);
+            itemstack.damageItem( 1, entityplayer );
         }
-        if (!world.isRemote)
+        if ( !world.isRemote )
         {
             EntityLightningBolt lightningBolt = new EntityLightningBolt( world, entityplayer.posX, entityplayer.posY, entityplayer.posZ );
             world.spawnEntityInWorld( lightningBolt );

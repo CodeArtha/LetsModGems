@@ -1,6 +1,7 @@
 package com.codeartha.opmod.block;
 
-public class BlockSteel extends BlockOP
+public class BlockSteel
+    extends BlockOP
 {
     public BlockSteel()
     {

@@ -1,6 +1,7 @@
 package com.codeartha.opmod.block;
 
-public class BlockTitaniumOre extends BlockOP
+public class BlockTitaniumOre
+    extends BlockOP
 {
     public BlockTitaniumOre()
     {

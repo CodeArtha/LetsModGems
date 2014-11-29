@@ -1,6 +1,7 @@
 package com.codeartha.opmod.item;
 
-public class ItemCreepySphere extends ItemOP
+public class ItemCreepySphere
+    extends ItemOP
 {
     public ItemCreepySphere()
     {

@@ -1,19 +1,19 @@
 package com.codeartha.opmod.block;
 
 import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 
-public class BlockAdamantium extends BlockOP
+public class BlockAdamantium
+    extends BlockOP
 {
     private final MapColor mapColor;
 
     // Sorry.. Used it in my video, but turns out it wasn't used at all, seems like getMapColor does not use it's parameter!
     //private static final int COLOR_ID = 30;
 
-    public BlockAdamantium(MapColor Color)
+    public BlockAdamantium( MapColor Color )
     {
         super();
-        this.setBlockName("adamantiumBlock");
+        this.setBlockName( "adamantiumBlock" );
         this.setHardness( 20.0f ); // Mining speed, ae: Obsidian = 50.0f ; Iron Block = 5.0f
         this.setResistance( 2500.0f ); // Blast resistance, ae: Obsidian : 2000.0f
         this.setStepSound( soundTypeMetal );

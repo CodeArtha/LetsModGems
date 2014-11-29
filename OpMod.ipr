@@ -187,6 +187,7 @@
         <w>catergories</w>
         <w>chestplate</w>
         <w>codeartha</w>
+        <w>hwacha</w>
         <w>knockback</w>
         <w>movingobjectposition</w>
         <w>opmod</w>
@@ -199,7 +200,7 @@
       <module fileurl="file://$PROJECT_DIR$/OpMod.iml" filepath="$PROJECT_DIR$/OpMod.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
@@ -207,6 +208,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
 

@@ -8,35 +8,36 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-public class BlockOP extends Block
+public class BlockOP
+    extends Block
 {
-    public BlockOP(Material material)
+    public BlockOP( Material material )
     {
-        super(material);
+        super( material );
         this.setCreativeTab( CreativeTabOP.OpMod_TAB );
     }
 
     public BlockOP()
     {
-        this(Material.iron);
+        this( Material.iron );
     }
 
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format( "tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName( super.getUnlocalizedName() ) );
     }
 
     @Override
-    @SideOnly( Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons( IIconRegister iconRegister )
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+        blockIcon = iconRegister.registerIcon( String.format( "%s", getUnwrappedUnlocalizedName( this.getUnlocalizedName() ) ) );
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    protected String getUnwrappedUnlocalizedName( String unlocalizedName )
     {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+        return unlocalizedName.substring( unlocalizedName.indexOf( "." ) + 1 );
     }
 
 }

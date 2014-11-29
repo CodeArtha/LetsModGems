@@ -16,22 +16,20 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.oredict.OreDictionary;
-import sun.java2d.pipe.hw.AccelDeviceEventNotifier;
 
-@Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
+@Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS )
 public class OpMod
 {
-    @Mod.Instance(Reference.MOD_ID)
+    @Mod.Instance( Reference.MOD_ID )
     public static OpMod instance;
 
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+    @SidedProxy( clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS )
     public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit( FMLPreInitializationEvent event )
     {
-        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        ConfigurationHandler.init( event.getSuggestedConfigurationFile() );
         FMLCommonHandler.instance().bus().register( new ConfigurationHandler() );
         MinecraftForge.EVENT_BUS.register( new Event_LivingDrops() );
 
@@ -51,14 +49,13 @@ public class OpMod
 
         //FMLCommonHandler.instance().bus().register( new Event_LivingDrops() );
 
-
-        LogHelper.info("Initialisation Complete!");
+        LogHelper.info( "Initialisation Complete!" );
     }
 
     @Mod.EventHandler
     public void postInit( FMLPostInitializationEvent event )
     {
-        LogHelper.info("Post Initialisation Complete!");
+        LogHelper.info( "Post Initialisation Complete!" );
     }
 }
 

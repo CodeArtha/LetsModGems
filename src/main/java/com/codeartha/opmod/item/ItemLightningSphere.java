@@ -1,6 +1,7 @@
 package com.codeartha.opmod.item;
 
-public class ItemLightningSphere extends ItemOP
+public class ItemLightningSphere
+    extends ItemOP
 {
     public ItemLightningSphere()
     {

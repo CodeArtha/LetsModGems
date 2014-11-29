@@ -2,7 +2,8 @@ package com.codeartha.opmod.item;
 
 import net.minecraft.item.ItemStack;
 
-public class ItemEnchantedDiamondStick extends ItemOP
+public class ItemEnchantedDiamondStick
+    extends ItemOP
 {
     public ItemEnchantedDiamondStick()
     {
@@ -11,7 +12,7 @@ public class ItemEnchantedDiamondStick extends ItemOP
         this.maxStackSize = 16;
     }
 
-    public boolean hasEffect(ItemStack itemStack, int passes)
+    public boolean hasEffect( ItemStack itemStack, int passes )
     {
         return true;
     }
